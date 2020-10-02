@@ -1,0 +1,37 @@
+/* priamary #1695ce
+   secondary #7e3896
+*/
+
+.mr-auto {
+  margin-right: auto !important;
+  display: block !important;
+}
+.navbar {
+  background-image: linear-gradient(to right, #1695ce, #7e3896);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar__logo {
+  color: #fff;
+  font-weight: 300;
+  text-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+}
+.navbar__item {
+  color: #fff !important;
+}
+.navbar__icon {
+  color: #fff !important;
+}
+.navbar__menu {
+  background-image: rgba(0, 0, 0, 1);
+}
+.navbar__menu-item {
+  font-weight: 300;
+  font-size: 20px;
+}
+/* @media (max-width: 992px) {
+  .navbar__item:not(:last-child) {
+    margin-right: 0px;
+  }
+} */
