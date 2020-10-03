@@ -4,14 +4,15 @@ import SearchIcon from "@material-ui/icons/Search";
 const useStyles = makeStyles((theme) => ({
   cta: {
     background: "#1695ce",
-    padding: theme.spacing(10, 2),
+    padding: theme.spacing(8, 2),
   },
   ctaInput: {
+    borderColor: "none ",
     borderRadius: "50px",
-    padding: "15px 50px",
-    fontSize: "1.5rem",
-    color: "#999",
-    fontWeight: "300",
+    padding: "15px 25px",
+    fontSize: "1.2rem",
+    color: "#000",
+    fontWeight: "400",
     "&:focus": {
       outline: "none",
     },

@@ -7,9 +7,8 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(10, 2),
   },
   button: {
-    
     color: "#7e3896",
-    padding: theme.spacing(2, 4),
+    padding: theme.spacing(1, 3),
     borderRadius: "10px",
     fontSize: "1.2rem",
   },
@@ -23,7 +22,6 @@ function Cta2() {
       <Box className={`${classes.cta}`}>
         <Grid container direction="row" justify="center" alignItems="center">
           <Button
-            size="large"
             color="default"
             variant="contained"
             className={classes.button}

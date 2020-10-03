@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(8, 0, 6),
     height: "74.7vh",
     background:
-      "linear-gradient(to right, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)) ,   url(https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80)",
+      "linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)) ,   url(https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80)",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -33,8 +33,7 @@ const useStyles = makeStyles((theme) => ({
   },
   textClr: {
     color: "#fff",
-    textShadow:
-      "2px 0 0 rgba(0,0,0,.3), -2px 0 0 rgba(0,0,0,.3), 0 2px 0 rgba(0,0,0,.3), 0 -2px 0 rgba(0,0,0,.3), 1px 1px rgba(0,0,0,.3), -1px -1px 0 rgba(0,0,0,.3), 1px -1px 0 rgba(0,0,0,.3), -1px 1px 0 rgba(0,0,0,.3)",
+    fontWeight: "lighter !important",
   },
 }));
 

@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     padding: theme.spacing(2, 2),
     background: "#fff",
-    borderRadius: "5px 40% 5px 4px",
+    borderRadius: "4px 4px 4px 4px",
   },
 
   heading: {
@@ -45,7 +45,7 @@ function Feature() {
             container
             spacing={3}
           >
-            <Grid item xs={6} sm={6} md={3}>
+            <Grid item xs={10} sm={6} md={3}>
               <Card className={classes.root} elevation={8}>
                 <CardContent>
                   <HotelIcon
@@ -64,7 +64,7 @@ function Feature() {
               </Card>
             </Grid>
 
-            <Grid item xs={6} sm={6} md={3}>
+            <Grid item xs={10} sm={6} md={3}>
               <Card className={classes.root} elevation={8}>
                 <CardContent>
                   <FastfoodIcon
@@ -82,7 +82,7 @@ function Feature() {
                 </CardContent>
               </Card>
             </Grid>
-            <Grid item xs={6} sm={6} md={3}>
+            <Grid item xs={10} sm={6} md={3}>
               <Card className={classes.root} elevation={8}>
                 <CardContent>
                   <DeckIcon
@@ -100,7 +100,7 @@ function Feature() {
                 </CardContent>
               </Card>
             </Grid>
-            <Grid item xs={6} sm={6} md={3}>
+            <Grid item xs={10} sm={6} md={3}>
               <Card className={classes.root} elevation={8}>
                 <CardContent>
                   <LocalPharmacyIcon
