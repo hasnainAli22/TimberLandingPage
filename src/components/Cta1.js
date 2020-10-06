@@ -1,13 +1,15 @@
 import { Box, FormControl, Grid, makeStyles } from "@material-ui/core";
 import React from "react";
 import SearchIcon from "@material-ui/icons/Search";
+import theme from "./theme";
+const { primary } = theme;
 const useStyles = makeStyles((theme) => ({
   cta: {
-    background: "#1695ce",
+    background: primary,
     padding: theme.spacing(8, 2),
   },
   ctaInput: {
-    borderColor: "none ",
+    border: "none",
     borderRadius: "50px",
     padding: "15px 25px",
     fontSize: "1.2rem",
@@ -17,10 +19,12 @@ const useStyles = makeStyles((theme) => ({
       outline: "none",
     },
     zIndex: "10",
-    position: "relative",
+    position: "static",
   },
   ctaFormControl: {
     width: "100%",
+    border: "none",
+    outline: "none",
   },
   ctaIcon: {
     zIndex: "20",

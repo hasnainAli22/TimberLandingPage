@@ -6,13 +6,14 @@ import {
   Typography,
 } from "@material-ui/core";
 import React from "react";
+import theme from "./theme";
+const { btnBg } = theme;
 
 const useStyles = makeStyles((theme) => ({
   heroContent: {
     padding: theme.spacing(8, 0, 6),
-    height: "74.7vh",
-    background:
-      "linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)) ,   url(https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80)",
+    height: "83vh",
+    background: "transparent",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -21,19 +22,18 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
   },
   btnMain: {
-    backgroundImage: "linear-gradient(to right, #1695ce, #7e3896)",
+    background: btnBg,
     color: "#fff",
   },
   btnSec: {
     color: "#fff",
-    backgroundImage: "linear-gradient(to right,#7e3896 ,#1695ce )",
+    background: btnBg,
   },
   heroButtons: {
     marginTop: theme.spacing(4),
   },
   textClr: {
-    color: "#fff",
-    fontWeight: "lighter !important",
+    color: "#DCDCDC",
   },
 }));
 

@@ -1,10 +1,13 @@
 import { Box, Grid, makeStyles, Typography } from "@material-ui/core";
+import React from "react";
+
 import FacebookIcon from "@material-ui/icons/Facebook";
 import PinterestIcon from "@material-ui/icons/Pinterest";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import InstagramIcon from "@material-ui/icons/Instagram";
+import theme from "./theme";
+const { primary, background } = theme;
 
-import React from "react";
 const useStyles = makeStyles((theme) => ({
   footer: {
     padding: theme.spacing(10, 2),
@@ -17,13 +20,13 @@ const useStyles = makeStyles((theme) => ({
     "& > *": {
       fontSize: "2.5rem",
       "&:hover": {
-        color: "#1695ce",
+        color: primary,
       },
     },
   },
   footerHeading: {
     "& > *": {
-      background: "linear-gradient(to right, #1695ce, #7e3896)",
+      background: background,
       display: "inline-block",
       WebkitBackgroundClip: "text",
       backgroundClip: "text  ",

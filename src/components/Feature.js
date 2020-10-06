@@ -12,6 +12,8 @@ import LocalPharmacyIcon from "@material-ui/icons/LocalPharmacy";
 import DeckIcon from "@material-ui/icons/Deck";
 import HotelIcon from "@material-ui/icons/Hotel";
 import React from "react";
+import theme from "./theme";
+const { secondary } = theme;
 const useStyles = makeStyles((theme) => ({
   feature: {
     background: "#f0f0f0",
@@ -25,8 +27,9 @@ const useStyles = makeStyles((theme) => ({
   },
 
   heading: {
-    color: "#7e3896",
+    color: secondary,
   },
+  icons: { fontSize: 50, color: secondary },
 }));
 
 function Feature() {
@@ -48,10 +51,7 @@ function Feature() {
             <Grid item xs={10} sm={6} md={3}>
               <Card className={classes.root} elevation={8}>
                 <CardContent>
-                  <HotelIcon
-                    gutterBottom
-                    style={{ fontSize: 50, color: "#7e3896" }}
-                  />
+                  <HotelIcon gutterBottom className={classes.icons} />
                   <Typography gutterBottom variant="h5" component="h2">
                     Beds
                   </Typography>
@@ -67,10 +67,7 @@ function Feature() {
             <Grid item xs={10} sm={6} md={3}>
               <Card className={classes.root} elevation={8}>
                 <CardContent>
-                  <FastfoodIcon
-                    gutterBottom
-                    style={{ fontSize: 50, color: "#7e3896" }}
-                  />
+                  <FastfoodIcon gutterBottom className={classes.icons} />
                   <Typography gutterBottom variant="h5" component="h2">
                     Food
                   </Typography>
@@ -85,10 +82,7 @@ function Feature() {
             <Grid item xs={10} sm={6} md={3}>
               <Card className={classes.root} elevation={8}>
                 <CardContent>
-                  <DeckIcon
-                    gutterBottom
-                    style={{ fontSize: 50, color: "#7e3896" }}
-                  />
+                  <DeckIcon gutterBottom className={classes.icons} />
                   <Typography gutterBottom variant="h5" component="h2">
                     Park
                   </Typography>
@@ -103,10 +97,7 @@ function Feature() {
             <Grid item xs={10} sm={6} md={3}>
               <Card className={classes.root} elevation={8}>
                 <CardContent>
-                  <LocalPharmacyIcon
-                    gutterBottom
-                    style={{ fontSize: 50, color: "#7e3896" }}
-                  />
+                  <LocalPharmacyIcon gutterBottom className={classes.icons} />
                   <Typography gutterBottom variant="h5" component="h2">
                     First Aid
                   </Typography>

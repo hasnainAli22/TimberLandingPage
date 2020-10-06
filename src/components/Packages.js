@@ -9,6 +9,8 @@ import {
   Typography,
 } from "@material-ui/core";
 import React from "react";
+import theme from "./theme";
+const { secondary } = theme;
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -19,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(10, 2),
   },
   heading: {
-    color: "#7e3896",
+    color: secondary,
   },
   media: {
     height: 0,
@@ -53,7 +55,11 @@ function Packages() {
                   title="Asgard"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant={"h5"} className={classes.cardTitle}>
+                  <Typography
+                    gutterBottom
+                    variant={"h5"}
+                    className={classes.cardTitle}
+                  >
                     Asgard
                   </Typography>
 

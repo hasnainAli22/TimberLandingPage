@@ -1,13 +1,15 @@
 import { Box, Button, Grid, makeStyles } from "@material-ui/core";
 import SendIcon from "@material-ui/icons/Send";
 import React from "react";
+import theme from "./theme";
+const { secondary } = theme;
 const useStyles = makeStyles((theme) => ({
   cta: {
-    background: "#7e3896",
+    background: secondary,
     padding: theme.spacing(10, 2),
   },
   button: {
-    color: "#7e3896",
+    color: secondary,
     padding: theme.spacing(1, 3),
     borderRadius: "10px",
     fontSize: "1.2rem",

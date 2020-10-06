@@ -13,8 +13,9 @@ import EmailIcon from "@material-ui/icons/Email";
 import AlternateEmail from "@material-ui/icons/AlternateEmail";
 import PhoneEnabled from "@material-ui/icons/PhoneEnabled";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
-
 import React from "react";
+import theme from "./theme";
+const { secondary } = theme;
 const useStyle = makeStyles((theme) => ({
   contact: {
     padding: theme.spacing(10, 2),
@@ -26,7 +27,7 @@ const useStyle = makeStyles((theme) => ({
   contactCard: {
     padding: theme.spacing(2, 2),
     textAlign: "center",
-    background: "linear-gradient(to right, #1695ce, #7e3896)",
+    background: secondary,
     color: "#fff",
   },
   addressTextBox: {
@@ -38,25 +39,26 @@ const useStyle = makeStyles((theme) => ({
     padding: theme.spacing(2, 2),
   },
   heading: {
-    color: "#7e3896",
+    color: secondary,
   },
   formInputFeild: {
-    color: "#7e3896 !important",
-    border: "#7e3896 !important",
+    color: secondary,
+    border: secondary,
     marginBottom: "1rem !important",
   },
   formInputFeildLabel: {
-    color: "#7e3896 !important",
+    color: secondary,
   },
   formButton: {
-    background: "linear-gradient(to right, #1695ce, #7e3896)",
+    background: secondary,
     color: "#fff",
     marginTop: "1rem",
     "&:hover": {
-      backgroundColor: "#7e3896",
+      backgroundColor: secondary,
       color: "#fff",
     },
   },
+  icons: { color: secondary, marginRight: "5px" },
 }));
 
 function Contact() {
@@ -120,23 +122,17 @@ function Contact() {
                       Book Timber
                     </Typography>
                     <Box className={classes.addressTextBox}>
-                      <LocationOnIcon
-                        style={{ color: "#7e3896", marginRight: "5px" }}
-                      />
+                      <LocationOnIcon className={classes.icons} />
                       <Typography>
                         123 Street Gujranwala, Punjab Pakistan
                       </Typography>
                     </Box>
                     <Box className={classes.addressTextBox}>
-                      <PhoneEnabled
-                        style={{ color: "#7e3896", marginRight: "5px" }}
-                      />
+                      <PhoneEnabled className={classes.icons} />
                       <Typography>+123 456 789</Typography>
                     </Box>
                     <Box className={classes.addressTextBox}>
-                      <AlternateEmail
-                        style={{ color: "#7e3896", marginRight: "5px" }}
-                      />
+                      <AlternateEmail className={classes.icons} />
                       <Typography>our.hasnain22@gmail.com</Typography>
                     </Box>
                   </CardContent>
